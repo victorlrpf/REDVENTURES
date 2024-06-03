@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "M PLUS Rounded 1c";
+}
+
+.items-header{
+    top: 15px;
+    position: absolute;
+}
+
+.rectangle {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Ilustracao{
+    display: flex;
+    width: 90vh;
+    position: absolute;
+    left: 20em;
+}
+
+div .kanji{
+    font-size: xxx-large;
+    color: #FFC024;
+}
+
+.text-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 201px;
+    height: 124px;
+    color: #FAFAED;
+    padding: 10px;
+}
+
+.titulo-go {
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 100px;
+    color: #FAFAED;
+}
+
+.items-texto {
+    position: absolute;
+    left: 10em;
+}
+
+
+/* main */
+
+.broth-selection, .meat-selection {
+    text-align: center;
+}
+
+.broths, .meats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.broth, .meat {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 320px;
+    height: 316px;
+    text-align: center;
+}
+
+.order-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #e65c00;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF4E42;
+}
+
+.broth.active .price {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFC024;
+}
+
+.meat.active .price{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFC024;
+}
+
+
+.broth.active, .meat.active {
+    border-color: #ff6600;
+    background: #1820EF;
+
+}
+
+.broth img, .meat img {
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+}
