@@ -50,10 +50,45 @@ div .kanji{
     left: 10em;
 }
 
+.b-ativo {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20.79px;
+    letter-spacing: 1.78px;
+    color: #FFFFFF;
+    background-color: #1820EF;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.b-ativo p {
+    color: #FFC024;
+}
+
+.b-desativado {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20.79px;
+    letter-spacing: 1.78px;
+    color: #FFFFFF;
+    background: #C5C5C5;    
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    cursor: not-allowed;
+}
 
 /* main */
 
-.broth-selection, .meat-selection {
+#pedidos {
+    padding: 5em;
+}
+
+.broth-selection, .protein-selection {
     text-align: center;
 }
 
@@ -62,9 +97,10 @@ div .kanji{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 2em;
 }
 
-.broth, .meat {
+.broth, .protein {
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ddd;
@@ -103,7 +139,7 @@ div .kanji{
     color: #FFC024;
 }
 
-.meat.active .price{
+.protein.active .price{
     font-weight: 900;
     font-size: 20px;
     line-height: 24px;
@@ -111,14 +147,66 @@ div .kanji{
 }
 
 
-.broth.active, .meat.active {
+.broth.active, .protein.active {
     border-color: #ff6600;
     background: #1820EF;
 
 }
 
-.broth img, .meat img {
+.broth img, .protein img {
     width: 104px;
     height: 104px;
     object-fit: contain;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#finishOrderButton {
+    padding: 10px 20px;
+}
+
+
+//  TODO: dsadas
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+#finishOrderButton {
+    padding: 10px 20px;
+}
+
+.order-confirmation {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.order-confirmation h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-confirmation p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.order-confirmation button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1820EF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-confirmation button:hover {
+    background-color: #151bce;
 }

@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <img src="/src/assets/Rectangle.png" alt="Ilustracao" class="rectangle" >
+        <img src="/src/assets/Rectangle.png" alt="Ilustracao" class="rectangle">
         <div class="items-header">
-            <img src="/src/assets/Ilustracao.png" alt="Ilustracao" class="Ilustracao" >
+            <img src="/src/assets/Ilustracao.png" alt="Ilustracao" class="Ilustracao">
             <div class="items-texto">
                 <div class="text-logo">
                     <h3 class="kanji">
@@ -23,32 +23,27 @@
                 </div>
                 <p class="text-p">Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!</p>
                 <a href="#pedidos">
-                    <img src="./src/assets/b-ativo.png" alt="Button ativo" >
+                    <button class="b-ativo">ORDER NOW <p>→</p></button>
                 </a>
             </div>
         </div>
     </header>
-    <main id="pedidos">
+    <main id="pedidos">        
         <section class="broth-selection">
             <h2>First things first: select your favorite broth.</h2>
             <p>It will give the whole flavor on your ramen soup.</p>
-            <div class="broths">
-                <!-- Broth options will be dynamically inserted here -->
-            </div>
+            <div class="broths"></div>
         </section>
-        <section class="meat-selection">
+        <section class="protein-selection">
             <h2>It's time to choose (or not) your meat!</h2>
             <p>Some people love, some don't. We have options for all tastes.</p>
-            <div class="meats">
-                <!-- Meat options will be dynamically inserted here -->
-            </div>
+            <div class="meats"></div>
         </section>
-        <button class="order-button">PLACE MY ORDER</button>
-
+        <div class="button-container">
+            <button class="b-desativado" id="finishOrderButton" disabled>PLACE MY ORDER <p>→</p></button>
+        </div>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="./src/js/scripts.js"></script>
 </body>
 </html>
