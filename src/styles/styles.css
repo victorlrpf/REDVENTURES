@@ -210,3 +210,10 @@ div .kanji{
 .order-confirmation button:hover {
     background-color: #151bce;
 }
+
+
+// dispositivos moveis
+
+@media only screen and (max-width: 576px) {
+    
+}
